@@ -1,0 +1,43 @@
+{
+    "name": "psc-acme/core-order",
+    "description": "Package core-order for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\CoreOrder\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "symfony/validator": "^7.0",
+        "brick/date-time": "^0.7.1",
+        "guzzlehttp/guzzle": "^7.0",
+        "psr/cache": "^3.0",
+        "symfony/dotenv": "^7.0",
+        "firebase/php-jwt": "^6.0",
+        "psc-acme/driver-invoice": "^1.0",
+        "psc-acme/worker-invoice": "^1.0",
+        "psc-acme/middleware-invoice": "^1.0"
+    },
+    "require-dev": {
+        "behat/behat": "^3.14"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
